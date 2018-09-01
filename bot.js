@@ -11,7 +11,7 @@ const client = new Discord.Client();
 client.on("message", async message => {
     if (message.author.bot) return;
     if (message.channel.type === "dm") return;
-    let prefix = "la";
+    let prefix = "j";
     let messageArray = message.content.split(" ");
     let command = messageArray[0];
 
@@ -29,7 +29,7 @@ client.on('ready', () => {
     client.user.setStatus("Online")
 });
  
-const prefix = "la"
+const prefix = "j"
 client.on('message', async msg => {
     if (msg.author.bot) return undefined;
  
@@ -223,8 +223,8 @@ function play(guild, song) {
     serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
  
-const adminprefix = "la";
-const devs = ['302354407864139777'];
+const adminprefix = "j";
+const devs = ['482179798425403402'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
